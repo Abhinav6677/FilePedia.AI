@@ -13,7 +13,7 @@ A Streamlit-based document processing and Q&A application that allows users to u
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Abhinav6677/FilePedia.AI.git
 cd FilePedia-2.0
 ```
 
@@ -52,7 +52,7 @@ FilePedia 2.0/
 
 ## Requirements
 
-- Python 3.8+
+- Python 
 - Streamlit
 - PyMuPDF
 - Other dependencies listed in `requirement.txt`
