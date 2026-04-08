@@ -28,9 +28,6 @@ Format:
 
     return questions if len(questions) == 3 else ["(❌ Failed to generate 3 valid questions)"]
 
-
-    return ask_gemini(prompt)
-
 def evaluate_answers(doc_text, questions, answers):
     prompt = f"""
 You're a teaching assistant AI. Evaluate the user's answers to the questions below based on the document content.
@@ -84,4 +81,4 @@ def ask_gemini(prompt):
     if res.status_code == 200:
         return res.json()["candidates"][0]["content"]["parts"][0]["text"]
     else:
-        return [f"❌ Error: {res.text}"]
+        return f"❌ Error: {res.text}"
